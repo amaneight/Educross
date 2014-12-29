@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{86FDA065-3B73-40F4-B383-EE4A9C317189}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>WindowsApplication1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WindowsApplication1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WindowsApplication1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>edu.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeFile1.vb" />
+    <Compile Include="cross.Designer.vb">
+      <DependentUpon>cross.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cross.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="educrossDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>educrossDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="educrossDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>educrossDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="educrossDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>educrossDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="educrossDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>educrossDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="educrossDataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>educrossDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="educrossDataSet4.vb">
+      <DependentUpon>educrossDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="educrossDataSet5.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>educrossDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="crcross.Designer.vb">
+      <DependentUpon>crcross.vb</DependentUpon>
+    </Compile>
+    <Compile Include="crcross.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="educrossDataSet6.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>educrossDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="educrossDataSet7.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>educrossDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="educrossDataSet8.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>educrossDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="educrossDataSet9.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>educrossDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stats.Designer.vb">
+      <DependentUpon>stats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stats.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subcross.Designer.vb">
+      <DependentUpon>subcross.vb</DependentUpon>
+    </Compile>
+    <Compile Include="subcross.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.vb">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rules.Designer.vb">
+      <DependentUpon>rules.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rules.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level.Designer.vb">
+      <DependentUpon>Level.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Level.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scorecard.Designer.vb">
+      <DependentUpon>Scorecard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Scorecard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stucross.Designer.vb">
+      <DependentUpon>stucross.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stucross.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stulog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stulog.Designer.vb">
+      <DependentUpon>stulog.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stureg.Designer.vb">
+      <DependentUpon>stureg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stureg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="faclog.Designer.vb">
+      <DependentUpon>faclog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="faclog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="facreg.Designer.vb">
+      <DependentUpon>facreg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="facreg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stuhp.Designer.vb">
+      <DependentUpon>stuhp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stuhp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fc_hp.Designer.vb">
+      <DependentUpon>fc_hp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fc_hp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="viewcross.Designer.vb">
+      <DependentUpon>viewcross.vb</DependentUpon>
+    </Compile>
+    <Compile Include="viewcross.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crcross.resx">
+      <DependentUpon>crcross.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cross.resx">
+      <DependentUpon>cross.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stats.resx">
+      <DependentUpon>stats.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subcross.resx">
+      <DependentUpon>subcross.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level.resx">
+      <DependentUpon>Level.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rules.resx">
+      <DependentUpon>rules.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scorecard.resx">
+      <DependentUpon>Scorecard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stucross.resx">
+      <DependentUpon>stucross.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stulog.resx">
+      <DependentUpon>stulog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stureg.resx">
+      <DependentUpon>stureg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="faclog.resx">
+      <DependentUpon>faclog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="facreg.resx">
+      <DependentUpon>facreg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stuhp.resx">
+      <DependentUpon>stuhp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fc_hp.resx">
+      <DependentUpon>fc_hp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewcross.resx">
+      <DependentUpon>viewcross.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="educrossDataSet.xsc">
+      <DependentUpon>educrossDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="educrossDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>educrossDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="educrossDataSet.xss">
+      <DependentUpon>educrossDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="educrossDataSet1.xsc">
+      <DependentUpon>educrossDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="educrossDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>educrossDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="educrossDataSet1.xss">
+      <DependentUpon>educrossDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="educrossDataSet2.xsc">
+      <DependentUpon>educrossDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="educrossDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>educrossDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="educrossDataSet2.xss">
+      <DependentUpon>educrossDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="educrossDataSet3.xsc">
+      <DependentUpon>educrossDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="educrossDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>educrossDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="educrossDataSet3.xss">
+      <DependentUpon>educrossDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="educrossDataSet4.xsc">
+      <DependentUpon>educrossDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="educrossDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>educrossDataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="educrossDataSet4.xss">
+      <DependentUpon>educrossDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="educrossDataSet5.xsc">
+      <DependentUpon>educrossDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="educrossDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>educrossDataSet5.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="educrossDataSet5.xss">
+      <DependentUpon>educrossDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="educrossDataSet6.xsc">
+      <DependentUpon>educrossDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="educrossDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>educrossDataSet6.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="educrossDataSet6.xss">
+      <DependentUpon>educrossDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="educrossDataSet7.xsc">
+      <DependentUpon>educrossDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="educrossDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>educrossDataSet7.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="educrossDataSet7.xss">
+      <DependentUpon>educrossDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="educrossDataSet8.xsc">
+      <DependentUpon>educrossDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="educrossDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>educrossDataSet8.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="educrossDataSet8.xss">
+      <DependentUpon>educrossDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="educrossDataSet9.xsc">
+      <DependentUpon>educrossDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="educrossDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>educrossDataSet9.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="educrossDataSet9.xss">
+      <DependentUpon>educrossDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\wallpaper-29562.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\woodenback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Me.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Akshay.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\ashish.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="edu.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
